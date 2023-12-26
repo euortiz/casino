@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Sidebar from './Sidebar.vue';
 
 const isResponsiveNavbarOpen = ref(false);
 
@@ -45,9 +44,7 @@ const toggleResponsiveNavbar = () => {
           <input type="search" placeholder="Search..." class="border bg-gray-900 px-4 py-2 pl-10 text-white rounded-sm">
           <img src="../assets/search.svg" alt="search icon" class="absolute w-6 top-2 ml-2">
         </div>
-        <div class="w-full flex items-center justify-center">
-          <Sidebar />
-        </div>
+
       </div>
     </div>
   </header>
