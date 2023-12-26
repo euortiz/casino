@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import tigergems from '../assets/winners/tigergems.svg'
 import coinstrike from '../assets/winners/coinstrike.svg'
 import cactusriches from '../assets/winners/cactusriches.svg'

@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-preto h-auto w-[250px] border-b-gray-600 rounded-b-2xl shadow-2xl m-1">
-        <ul class="items-center flex flex-col justify-center">
-            <div class="my-10">
+    <div class="bg-preto h-auto min-w-[250px] flex-1 border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 m-[-2.75rem]">
+        <ul class="items-center flex flex-col justify-center ">
+            <div class="my-10 ">
                 <button v-for="category in categories" :key="category.id"
                     class="btn_side text-white my-2 px-5 py-2 rounded-xl items-center justify-left flex">
                     <img :src="getIconPath(category.id)" class="icones" />

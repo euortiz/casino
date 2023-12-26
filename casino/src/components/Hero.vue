@@ -18,9 +18,9 @@ import Winners from './Winners.vue';
 
         <div class="lg:w-1/2 xl:w-3/4">
 
-          <div class="gap-2 rounded-xl w-full h-[50vh] p-1">
+          <div class="gap-2 rounded-xl w-full h-[50vh]">
             <img src=" ../assets/hero/hero.svg" alt="hero img"
-              class="min-w-[400px] object-cover bg-no-repeat rounded-xl w-full h-full">
+              class="min-w-[400px] object-cover bg-no-repeat rounded-xl w-full h-full pt-2">
           </div>
 
           <div
@@ -34,7 +34,7 @@ import Winners from './Winners.vue';
           </div>
         </div>
 
-        <div class="lg:w-1/2 xl:w-1/4 flex items-center justify-center overflow-hidden">
+        <div class="lg:w-1/2 xl:w-1/4 flex items-center justify-center overflow-hidden h-[50vh]">
           <Winners />
         </div>
       </div>
