@@ -33,7 +33,7 @@ const toggleResponsiveNavbar = () => {
 
     <div v-if="isResponsiveNavbarOpen" class="md:hidden">
 
-      <div class="flex flex-col items-center justify-center bg-preto/95 fixed left-0 p-10 top-20 w-full gap-10">
+      <div class="flex flex-col items-center justify-center bg-preto/70 fixed left-0 p-10 top-20 w-full gap-5 h-auto">
         <div class="flex gap-5 text-white font-medium">
           <button class="flex items-center justify-center gap-1"><img src="../assets/777.svg" alt="Slots Icon"
               class="w-6">Slots</button>

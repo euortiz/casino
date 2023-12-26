@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-preto h-auto w-[250px] border-b rounded-b-2xl shadow-2xl m-2">
+    <div class="bg-preto h-auto w-[250px] border-b-gray-600 rounded-b-2xl shadow-2xl m-1">
         <ul class="items-center flex flex-col justify-center">
             <div class="my-10">
                 <button v-for="category in categories" :key="category.id"
