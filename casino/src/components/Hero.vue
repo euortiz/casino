@@ -18,13 +18,13 @@ import Winners from './Winners.vue';
 
         <div class="lg:w-1/2 xl:w-3/4">
 
-          <div class="gap-2 rounded-xl w-full h-[50vh]">
+          <div class="gap-2 rounded-xl w-full lg:h-[55vh]">
             <img src=" ../assets/hero/hero.svg" alt="hero img"
               class="min-w-[400px] object-cover bg-no-repeat rounded-xl w-full h-full pt-2">
           </div>
 
           <div
-            class="text-white font-bold text-[2rem] lg:text-[2.3rem] xl:text-[3rem] flex-col items-start justify-start text-center lg:absolute md:top-[3%] xl:ml-10 my-10 bg-preto/5 p-10 rounded-3xl">
+            class="text-white font-bold text-[1.5rem] sm:text-[2rem] lg:text-[2.3rem] xl:text-[3rem] flex-col items-start justify-start text-center absolute top-0 xl:ml-10 my-10 bg-preto/5 p-10 rounded-3xl">
             <h1>Welcome Package</h1>
             <i>€/€200</i><br>
             <i class="text-yellow">+200 </i><i>free spins</i><br>
@@ -34,7 +34,7 @@ import Winners from './Winners.vue';
           </div>
         </div>
 
-        <div class="lg:w-1/2 xl:w-1/4 flex items-center justify-center overflow-hidden h-[50vh]">
+        <div class="lg:w-1/2 xl:w-1/4 flex items-center justify-center overflow-hidden lg:h-[55vh]">
           <Winners />
         </div>
       </div>
