@@ -24,11 +24,12 @@ const toggleResponsiveNavbar = () => {
     </div>
     <div class="gap-3 flex items-center justify-center">
       <div class="relative hidden md:flex">
-        <input type="search" placeholder="Search..." class="border bg-preto px-4 py-2 pl-10 text-white rounded-sm">
+        <input type="search" placeholder="Search..." class="border bg-preto px-4 py-2 pl-10 text-white rounded-xl">
         <img src="../assets/search.svg" alt="search icon" class="absolute w-6 top-2 ml-2">
       </div>
-      <button class="btn_nav border text-white font-medium py-2 px-5 rounded-sm cursor-pointer">Sign In</button>
-      <button class="btn_nav bg-pink text-white font-medium py-2 px-5 rounded-sm cursor-pointer">Connect</button>
+      <button class="btn_nav border text-white font-medium py-2 px-5 rounded-xl cursor-pointer text-nowrap">Sign
+        In</button>
+      <button class="btn_nav bg-pink text-white font-medium py-2 px-5 rounded-xl cursor-pointer">Connect</button>
     </div>
 
     <div v-if="isResponsiveNavbarOpen" class="md:hidden">
