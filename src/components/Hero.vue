@@ -29,11 +29,10 @@ import Winners from './Winners.vue';
           </div>
         </div>
 
-<<<<<<< HEAD
+
         <div class="lg:w-1/3 xl:w-1/4 flex items-center justify-center overflow-hidden h-[50vh]">
-=======
-        <div class="lg:w-1/2 xl:w-1/4 flex items-center justify-center overflow-hidden lg:h-[55vh]">
->>>>>>> fc3366f8ff8ffaac130a4643a7b3a4e1a95cc704
+
+
           <Winners />
         </div>
       </div>
