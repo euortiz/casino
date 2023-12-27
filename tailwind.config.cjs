@@ -11,6 +11,11 @@ module.exports = {
         yellow: "#FFFF00",
         green: "#4ADE80",
       },
+      screens: {
+        xs: "400px",
+        "3xl": "1680px",
+        "4xl": "2200px",
+      },
     },
   },
 
