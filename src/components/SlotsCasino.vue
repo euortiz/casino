@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-5 mt-[5.625rem] mx-2 flex-wrap">
+    <div class="flex gap-5 mt-[5.625rem] mx-2 flex-wrap pt-12">
         <div v-for="slot in slots" :key="slot.id" class="bg-preto/70 rounded-xl flex-1">
             <div class="flex-1 h-auto cursor-pointer min-w-[9.375rem]">
                 <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl">

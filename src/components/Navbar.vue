@@ -10,7 +10,11 @@ const toggleResponsiveNavbar = () => {
 </script>
 
 <template>
-  <header class="flex justify-evenly bg-preto/60 fixed top-0 shadow-xl w-full z-50">
+  <header class="flex justify-evenly bg-preto/60 fixed top-0 shadow-xl w-full z-50 pt-10">
+    <div class="fixed  top-3 h-[10px] text-white w-full flexCenter">
+      <p class="bg-red-700 top-0 relative w-full flexCenter py-1 gap-5"><img src="../assets/18.svg" alt="+18 icon"
+          class="w-8 h-8">Juega con responsabilidad. Puedes comprobar las pautas de comportamiento en nuestra página.</p>
+    </div>
     <div class="flex gap-3">
       <button @click="toggleResponsiveNavbar" class="text-white cursor-pointer lg:hidden"><img
           src="../assets/nav.svg"></button>

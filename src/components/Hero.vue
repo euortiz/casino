@@ -4,9 +4,9 @@ import Sections from '../components/Sections.vue'
 </script>
 
 <template>
-  <div class="flex top-20">
+  <div class="flex">
 
-    <div class="top-20 relative flex flex-col w-full h-full">
+    <div class="top-32 relative flex flex-col w-full h-full">
 
       <div class="flex flex-col lg:flex-row">
 
