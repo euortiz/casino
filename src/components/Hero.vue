@@ -29,9 +29,7 @@ import Winners from './Winners.vue';
           </div>
         </div>
 
-
         <div class="lg:w-1/3 xl:w-1/4 flex items-center justify-center overflow-hidden h-[50vh]">
-
 
           <Winners />
         </div>
