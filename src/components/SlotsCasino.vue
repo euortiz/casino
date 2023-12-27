@@ -1,7 +1,7 @@
 <template>
-    <div class="flex gap-5 flex-shrink-0 overflow-scroll mt-[5.625rem] mx-2">
-        <div v-for="slot in slots" :key="slot.id" class="bg-preto/70 rounded-xl">
-            <div class="w-[200px] h-auto cursor-pointer">
+    <div class="flex gap-5 mt-[5.625rem] mx-2 flex-wrap">
+        <div v-for="slot in slots" :key="slot.id" class="bg-preto/70 rounded-xl flex-1">
+            <div class="flex-1 h-auto cursor-pointer min-w-[9.375rem]">
                 <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl">
                 <span class="text-white font-semibold p-2 flexCenter">{{ slot.gameName }}</span>
             </div>

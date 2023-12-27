@@ -27,7 +27,7 @@ const winners: Winner[] = [
 </script>
 
 <template>
-  <div class="flex-1 relative py-2 overflow-hidden w-full h-full">
+  <div class="flex-1 relative py-2 w-full h-full">
     <div class="flex-1">
       <ul class="flex flex-col items-start justify-start mx-2 rounded-xl bg-preto">
         <i class=" bg-gray-900 text-white font-semibold py-3 px-5 text-nowrap w-full rounded-t-xl">🏆
@@ -41,7 +41,7 @@ const winners: Winner[] = [
             <span class="text-white/55 text-sm">{{ `${winner.player} Just Won` }}</span>
             {{ winner.game }}
           </div>
-          <i class="text-green">{{ winner.amount }}</i>
+          <i class="text-green px-10">{{ winner.amount }}</i>
         </li>
       </ul>
     </div>

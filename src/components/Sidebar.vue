@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bg-preto h-auto w-64 min-w-60 flex-1 border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-20 inset-0 left-0 transform transition duration-200 ease-in-out hidden xl:block">
+        class="bg-preto h-auto w-64 min-w-60  border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-20 inset-0 left-0 transform transition duration-200 ease-in-out hidden lg:block">
         <ul class="items-center flex flex-col justify-center">
             <div class="my-10 ">
                 <button v-for="category in categories" :key="category.id"

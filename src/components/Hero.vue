@@ -1,21 +1,20 @@
 <script setup lang="ts">
-import Sections from './Sections.vue';
-import Winners from './Winners.vue';
+import Winners from '../components/Winners.vue'
+import Sections from '../components/Sections.vue'
 </script>
 
 <template>
-  <div class="flex relative top-20 lg:h-[65vh] h-[152vh] mx-2">
+  <div class="flex top-20">
 
-    <div class="flex flex-col overflow-hidden w-full h-auto">
+    <div class="top-20 relative flex flex-col w-full h-full">
 
-      <div class="flex flex-col lg:flex-row w-full">
+      <div class="flex flex-col lg:flex-row">
 
+        <div class="w-full">
 
-        <div class="lg:w-2/3 xl:w-3/4">
-
-          <div class="gap-2 rounded-xl w-full lg:h-[55vh]">
+          <div class="rounded-xl h-[37vh] md:h-[50vh] overflow-hidden mx-2">
             <img src=" ../assets/hero/hero.svg" alt="hero img"
-              class="min-w-[400px] object-cover bg-no-repeat rounded-xl w-full h-full pt-2">
+              class=" object-cover bg-no-repeat rounded-xl pt-2 h-full w-full">
           </div>
 
           <div
@@ -29,13 +28,12 @@ import Winners from './Winners.vue';
           </div>
         </div>
 
-        <div class="lg:w-1/3 xl:w-1/4 flex items-center justify-center overflow-hidden h-[50vh]">
-
+        <div class="w-full lg:w-1/3 px-1">
           <Winners />
         </div>
       </div>
 
-      <div class="overflow-x-auto flex-1">
+      <div>
         <Sections />
       </div>
     </div>

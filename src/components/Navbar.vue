@@ -12,7 +12,7 @@ const toggleResponsiveNavbar = () => {
 <template>
   <header class="flex justify-evenly bg-preto/60 fixed top-0 shadow-xl w-full z-50">
     <div class="flex gap-3">
-      <button @click="toggleResponsiveNavbar" class="text-white cursor-pointer md:hidden"><img
+      <button @click="toggleResponsiveNavbar" class="text-white cursor-pointer lg:hidden"><img
           src="../assets/nav.svg"></button>
       <img src="../assets/logo.svg" alt="Logo" class="h-20 w-20 py-2 cursor-pointer">
     </div>

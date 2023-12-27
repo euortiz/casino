@@ -10,7 +10,7 @@ import Sidebar from './components/SideBar.vue';
 </script>
 
 <template>
-  <div class="bg-cinza xl:flex">
+  <div class="bg-cinza lg:flex ">
     <Navbar />
     <Sidebar />
     <div class="flex-1">

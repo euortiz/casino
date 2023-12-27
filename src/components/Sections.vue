@@ -1,6 +1,6 @@
 <template>
     <div class="mt-2">
-        <ul class="flex gap-5">
+        <ul class="flex flex-wrap gap-5 mx-2">
             <li v-for="item in sections" :key="item.id" class="flex-1 gap-5 cursor-pointer shadow-xl min-w-[9.375rem]">
                 <div class="square items-center flex flex-col justify-center p-5 rounded-xl ">
                     <img :src="item.icon" class="w-10 h-10" />
