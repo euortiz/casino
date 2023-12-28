@@ -8,7 +8,7 @@
             <div class="griditem  w-full h-auto cursor-pointer min-w-[9.375rem] items-center justify-center flex-col flex"
                 @mouseover="setHoveredSlot(slot.id)" @mouseout="setHoveredSlot(null)">
                 <button v-show="hoveredSlot === slot.id"
-                    class="playnow font-semibold text-white bg-red-600 px-5 py-2 rounded-lg z-50 border-4 border-preto shadow-xl">
+                    class="playnow font-semibold text-white bg-red-600 px-5 py-2 rounded-lg z-50 border-4 border-preto shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105">
                     PLAY NOW!
                 </button>
                 <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl " />
@@ -21,7 +21,7 @@
             <div class="griditem  w-full h-auto cursor-pointer min-w-[9.375rem] items-center justify-center flex-col flex"
                 @mouseover="setHoveredSlot(slot.id)" @mouseout="setHoveredSlot(null)">
                 <button v-show="hoveredSlot === slot.id"
-                    class="playnow font-semibold text-white bg-red-600 px-5 py-2 rounded-lg z-50 border-4 border-preto shadow-xl">
+                    class="playnow font-semibold text-white bg-red-600 px-5 py-2 rounded-lg z-50 border-4 border-preto shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105">
                     PLAY NOW!
                 </button>
                 <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl " />
@@ -115,6 +115,10 @@ const setHoveredSlot = (slotId: number | null) => {
     position: absolute;
     top: 40%;
     z-index: 2;
+}
+
+.playnow:hover {
+    background: linear-gradient(to right, #fc5454, #8621f8);
 }
 </style>
   

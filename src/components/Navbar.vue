@@ -10,9 +10,9 @@ const toggleResponsiveNavbar = () => {
 </script>
 
 <template>
-  <header class="flex justify-evenly bg-preto/60 fixed top-0 shadow-xl w-full z-50 pt-10">
-    <div class="fixed  top-3 h-[10px] text-white w-full flexCenter">
-      <p class="bg-red-700 top-0 relative w-full flexCenter py-1 gap-5"><img src="../assets/18.svg" alt="+18 icon"
+  <header class="flex justify-evenly bg-preto/60 fixed top-0 shadow-xl w-full z-50 pt-[12%] sm:pt-10">
+    <div class="fixed top-4 h-[8px] text-white w-full flexCenter text-center">
+      <p class="bg-purple-950 top-0 relative w-full flexCenter py-1 gap-5"><img src="../assets/18.svg" alt="+18 icon"
           class="w-8 h-8">Juega con responsabilidad. Puedes comprobar las pautas de comportamiento en nuestra página.</p>
     </div>
     <div class="flex gap-3">
@@ -20,7 +20,7 @@ const toggleResponsiveNavbar = () => {
           src="../assets/nav.svg"></button>
       <img src="../assets/logo.svg" alt="Logo" class="h-20 w-20 py-2 cursor-pointer">
     </div>
-    <div class="md:flex gap-8 text-white font-medium hidden">
+    <div class="md:flex gap-10 text-white font-medium hidden">
       <button class="flex items-center justify-center gap-1"><img src="../assets/777.svg" alt="Slots Icon"
           class="w-6">Slots</button>
       <button class="flex items-center justify-center gap-1"><img src="../assets/cards.svg" alt="Slots Icon"
@@ -59,7 +59,7 @@ const toggleResponsiveNavbar = () => {
 
 <style>
 header {
-  backdrop-filter: blur(2.5rem);
+  backdrop-filter: blur(1.5rem);
   /* BLUR EFFECT IN THE NAVBAR */
 }
 

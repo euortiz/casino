@@ -1,10 +1,10 @@
 <template>
     <div
-        class="bg-preto h-auto w-64 min-w-60  border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-32 inset-0 left-0 hidden lg:block">
+        class="bg-preto/60 h-auto w-64 min-w-60  border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-32 inset-0 left-0 hidden lg:block">
         <ul class="items-center flex flex-col justify-center">
             <div class="my-10 ">
                 <button v-for="category in categories" :key="category.id"
-                    class="btn_side text-white my-2 px-5 py-2 rounded-xl items-center justify-left flex">
+                    class="btn_side text-white my-2 px-5 py-2 rounded-xl w-full items-center flex">
                     <img :src="getIconPath(category.id)" class="icones" />
                     {{ category.name }}
                 </button>
@@ -92,11 +92,8 @@ function getIconPath(categoryId: number): string {
 
 <style>
 .btn_side {
-    width: 100%;
     background: linear-gradient(to right, #2a2a2a, #1c1c1c);
-    /* Set initial background */
-    transition: background 0.5s ease;
-    /* Apply transition only to the background property */
+    transition: background-color 0.3s ease;
 }
 
 .btn_side:hover {

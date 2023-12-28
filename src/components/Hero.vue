@@ -12,7 +12,7 @@ import Sections from '../components/Sections.vue'
 
         <div class="w-full">
 
-          <div class="rounded-xl h-[37vh] md:h-[50vh] overflow-hidden mx-2">
+          <div class="rounded-xl h-[37vh] md:h-[50vh] overflow-hidden md:mx-2">
             <img src=" ../assets/hero/hero.svg" alt="hero img"
               class=" object-cover bg-no-repeat rounded-xl pt-2 h-full w-full">
           </div>
@@ -23,7 +23,7 @@ import Sections from '../components/Sections.vue'
             <i>€/€200</i><br>
             <i class="text-yellow">+200 </i><i>free spins</i><br>
             <button
-              class="bg-pink text-white font-medium py-2 px-5 rounded-xl cursor-pointer text-[1.5rem] hover:bg-purple-800">PLAY
+              class="bg-red-600 border-2 text-white font-medium py-2 px-5 rounded-xl cursor-pointer text-[1.5rem] hover:bg-gradient-to-r from-pink to-purple-700">PLAY
               NOW</button>
           </div>
         </div>
