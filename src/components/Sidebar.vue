@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bg-preto h-auto w-64 min-w-60  border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-32 inset-0 left-0 transform transition duration-200 ease-in-out hidden lg:block">
+        class="bg-preto h-auto w-64 min-w-60  border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-32 inset-0 left-0 hidden lg:block">
         <ul class="items-center flex flex-col justify-center">
             <div class="my-10 ">
                 <button v-for="category in categories" :key="category.id"
@@ -32,12 +32,6 @@ import rnggames from '../assets/sidebar/rnggames.svg'
 import card from '../assets/sidebar/card.svg'
 import sports from '../assets/sidebar/sports.svg'
 import lottery from '../assets/sidebar/lottery.svg'
-
-
-import { ref } from "vue";
-
-
-
 
 interface Category {
     id: number;
@@ -94,19 +88,19 @@ function getIconPath(categoryId: number): string {
     const icon = icons.find((icon) => icon.id === categoryId);
     return icon ? icon.path : '';
 }
-
-
-
 </script>
 
 <style>
 .btn_side {
     width: 100%;
+    background: linear-gradient(to right, #2a2a2a, #1c1c1c);
+    /* Set initial background */
+    transition: background 0.5s ease;
+    /* Apply transition only to the background property */
 }
 
 .btn_side:hover {
     background: linear-gradient(to right, #fc5454, #8621f8);
-    transition-duration: 0.4s;
 }
 
 .icones {

@@ -1,16 +1,39 @@
 <template>
-    <div class="flex gap-5 mt-[5.625rem] mx-2 flex-wrap pt-12">
-        <div v-for="slot in slots" :key="slot.id" class="bg-preto/70 rounded-xl flex-1">
-            <div class="flex-1 h-auto cursor-pointer min-w-[9.375rem]">
-                <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl">
+    <div class="flex justify-between w-full text-white mt-[15rem] px-5">
+        <span>🔴 SLOTS CASINO</span>
+        <button class="hover:text-gray-400" @click="toggleRestOfGames">Show all ></button>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-3 mx-2 pt-12">
+        <div v-for="slot in slots" :key="slot.id" class="bg-preto/70 rounded-xl border-4 border-preto">
+            <div class="griditem  w-full h-auto cursor-pointer min-w-[9.375rem] items-center justify-center flex-col flex"
+                @mouseover="setHoveredSlot(slot.id)" @mouseout="setHoveredSlot(null)">
+                <button v-show="hoveredSlot === slot.id"
+                    class="playnow font-semibold text-white bg-red-600 px-5 py-2 rounded-lg z-50 border-4 border-preto shadow-xl">
+                    PLAY NOW!
+                </button>
+                <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl " />
+
                 <span class="text-white font-semibold p-2 flexCenter">{{ slot.gameName }}</span>
             </div>
+        </div>
+        <div v-for="slot in secondSlots" :key="secondSlots.indexOf" v-if="isRestOfGames"
+            class="bg-preto/70 rounded-xl  border-4 border-preto">
+            <div class="griditem  w-full h-auto cursor-pointer min-w-[9.375rem] items-center justify-center flex-col flex"
+                @mouseover="setHoveredSlot(slot.id)" @mouseout="setHoveredSlot(null)">
+                <button v-show="hoveredSlot === slot.id"
+                    class="playnow font-semibold text-white bg-red-600 px-5 py-2 rounded-lg z-50 border-4 border-preto shadow-xl">
+                    PLAY NOW!
+                </button>
+                <img :src="slot.image" class="w-full h-40 object-cover rounded-t-xl " />
 
+                <span class="text-white font-semibold p-2 flexCenter">{{ slot.gameName }}</span>
+            </div>
         </div>
     </div>
 </template>
   
 <script setup lang="ts">
+import { ref } from "vue"
 import luckyjack from '../assets/slotscasino/luckyjack.svg'
 import mergeup from '../assets/slotscasino/mergeup.svg'
 import cactusriches from '../assets/slotscasino/cactusriches.svg'
@@ -19,13 +42,13 @@ import tnt from '../assets/slotscasino/tnt.svg'
 import vegasworld from '../assets/slotscasino/vegasworld.svg'
 import wildbuffalo from '../assets/slotscasino/wildbuffalo.svg'
 
-// import dragonsbonanza from '../assets/slotscasino/dragonsbonanza.svg'
-// import houseofslots from '../assets/slotscasino/houseofslots.svg'
-// import magicmice from '../assets/slotscasino/magicmice.svg'
-// import roulette from '../assets/slotscasino/roulettecash.svg'
-// import spinomenal from '../assets/slotscasino/spinomenal.svg'
-
 interface Slot {
+    id: number;
+    gameName: string;
+    image: string;
+}
+
+interface secondSlots {
     id: number;
     gameName: string;
     image: string;
@@ -35,18 +58,63 @@ const slots: Slot[] = [
     { id: 1, gameName: 'LUCKY JACK - BOOK OF REBIRTH', image: luckyjack },
     { id: 2, gameName: 'MERGE UP', image: mergeup },
     { id: 3, gameName: 'CACTUS RICHES: CASH POOL', image: cactusriches },
-    // { id: 4, gameName: 'SPINOMENAL', image: spinomenal },
-    { id: 5, gameName: 'CLASSIC FRUITS', image: classicfruits },
-    { id: 6, gameName: 'TNT BONANZA', image: tnt },
-    { id: 7, gameName: 'VEGAS WORLD', image: vegasworld },
-    { id: 8, gameName: 'WILD BUFFALO', image: wildbuffalo },
-    // { id: 9, gameName: 'DRAGONS BONANZA', image: dragonsbonanza },
-    // { id: 10, gameName: 'HOUSE OF SLOTS', image: houseofslots },
-    // { id: 11, gameName: 'MAGIC MICE', image: magicmice },
-    // { id: 12, gameName: 'ROULETTE CASH', image: roulette },
+    { id: 4, gameName: 'CLASSIC FRUITS', image: classicfruits },
+    { id: 5, gameName: 'TNT BONANZA', image: tnt },
+    { id: 6, gameName: 'VEGAS WORLD', image: vegasworld },
+    { id: 7, gameName: 'WILD BUFFALO', image: wildbuffalo },
+]
 
-];
+const secondSlots: Slot[] = [
+    { id: 8, gameName: 'LUCKY JACK - BOOK OF REBIRTH', image: luckyjack },
+    { id: 9, gameName: 'MERGE UP', image: mergeup },
+    { id: 10, gameName: 'CACTUS RICHES: CASH POOL', image: cactusriches },
+    { id: 11, gameName: 'CLASSIC FRUITS', image: classicfruits },
+    { id: 12, gameName: 'TNT BONANZA', image: tnt },
+    { id: 13, gameName: 'VEGAS WORLD', image: vegasworld },
+    { id: 14, gameName: 'WILD BUFFALO', image: wildbuffalo },
+]
+
+const isRestOfGames = ref(false);
+
+const toggleRestOfGames = () => {
+    isRestOfGames.value = !isRestOfGames.value;
+};
+
+const hoveredSlot = ref<number | null>(null);
+
+const setHoveredSlot = (slotId: number | null) => {
+    hoveredSlot.value = slotId;
+};
+
 </script>
   
-<style scoped></style>
+<style scoped>
+.griditem {
+    position: relative;
+}
+
+.griditem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.griditem:hover::before {
+    opacity: 1;
+}
+
+.griditem button.playnow {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+}
+</style>
   
