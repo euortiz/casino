@@ -1,9 +1,9 @@
 <template>
-    <div class="flex justify-between w-full text-white mt-[15rem] px-5">
+    <div class="flex justify-between w-full text-white mt-[12rem] px-5">
         <span>🔴 SLOTS CASINO</span>
         <button class="hover:text-gray-400" @click="toggleRestOfGames">Show all ></button>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-3 mx-2 pt-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-3 mx-2 pt-5">
         <div v-for="slot in slots" :key="slot.id" class="bg-preto/70 rounded-xl border-4 border-preto">
             <div class="griditem  w-full h-auto cursor-pointer min-w-[9.375rem] items-center justify-center flex-col flex"
                 @mouseover="setHoveredSlot(slot.id)" @mouseout="setHoveredSlot(null)">

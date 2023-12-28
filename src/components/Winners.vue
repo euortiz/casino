@@ -29,13 +29,13 @@ const winners: Winner[] = [
 <template>
   <div class="flex-1 relative py-2 w-full h-full">
     <div class="flex-1">
-      <ul class="flex flex-col items-start justify-start mx-2 rounded-xl bg-preto">
+      <ul class="flex flex-col items-start justify-start mx-2 rounded-xl bg-preto px-2 py-2">
         <i class=" bg-gray-900 text-white font-semibold py-3 px-5 text-nowrap w-full rounded-t-xl">🏆
           Latest
           Winners</i>
 
         <li v-for="winner in winners" :key="winner.id"
-          class="flex flex-row items-center gap-5  text-white font-semibold py-4 px-10 text-nowrap border-b-2 border-preto hover:bg-cinza cursor-pointer w-full justify-between rounded-xl">
+          class="btn_side flex flex-row items-center gap-5  text-white font-semibold py-4 px-10 text-nowrap border-b-2 border-preto hover:bg-cinza cursor-pointer w-full justify-between rounded-xl">
           <img :src="winner.avatar" alt="Avatar" class="w-10 h-10 rounded-full">
           <div class="flex flex-col w-full h-auto">
             <span class="text-white/55 text-sm">{{ `${winner.player} Just Won` }}</span>
