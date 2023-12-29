@@ -1,8 +1,8 @@
 <template>
     <div
-        class="bg-preto/60 h-auto w-64 min-w-60  border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative top-32 inset-0 left-0 hidden lg:block">
+        class="lg:bg-preto/60 h-auto lg:w-64 w-full min-w-60  lg:border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative lg:top-32 inset-0 left-0 lg:block overflow-y-scroll backdrop-blur-3xl">
         <ul class="items-center flex flex-col justify-center">
-            <div class="my-10 ">
+            <div class="my-10 w-full px-10">
                 <button v-for="category in categories" :key="category.id"
                     class="btn_side text-white my-2 px-5 py-2 rounded-xl w-full items-center flex">
                     <img :src="getIconPath(category.id)" class="icones" />

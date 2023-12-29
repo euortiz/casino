@@ -12,7 +12,7 @@ import Sidebar from './components/Sidebar.vue';
 <template>
   <div class="bg-gradient-to-b from-black to-purple-950 lg:flex ">
     <Navbar />
-    <Sidebar />
+    <Sidebar class="hidden lg:block" />
     <div class="flex-1">
       <Hero />
       <SlotsCasino />

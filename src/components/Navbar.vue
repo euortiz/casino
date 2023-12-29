@@ -38,8 +38,9 @@ const toggleResponsiveNavbar = () => {
 
     <div v-if="isResponsiveNavbarOpen" class="md:hidden">
 
-      <div class="flex flex-col items-center justify-center bg-preto/70 fixed left-0 p-10 top-20 w-full gap-5 h-auto">
-        <div class="flex gap-5 text-white font-medium">
+      <div
+        class="flexCenter flex-col bg-preto/70 fixed left-0 top-[100%] w-full gap-5 h-auto backdrop-blur-3xl overflow-y-scroll">
+        <div class="flex gap-5 text-white font-medium mt-20">
           <button class="flex items-center justify-center gap-1"><img src="../assets/777.svg" alt="Slots Icon"
               class="w-6">Slots</button>
           <button class="flex items-center justify-center gap-1"><img src="../assets/cards.svg" alt="Slots Icon"
@@ -49,7 +50,7 @@ const toggleResponsiveNavbar = () => {
           <input type="search" placeholder="Search..." class="border bg-gray-900 px-4 py-2 pl-10 text-white rounded-sm">
           <img src="../assets/search.svg" alt="search icon" class="absolute w-6 top-2 ml-2">
         </div>
-        <div class="w-full flex items-center justify-center">
+        <div class="w-full flexCenter z-50 relative">
           <Sidebar />
         </div>
       </div>
