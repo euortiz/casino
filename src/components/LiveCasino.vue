@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <p>livecasino</p>
+  <div class="bg-red-500">
+    <p>livecasino</p>
+  </div>
 </template>

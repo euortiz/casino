@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <p>faq</p>
+  <div class="bg-blue-400">
+    <p>faq</p>
+  </div>
 </template>

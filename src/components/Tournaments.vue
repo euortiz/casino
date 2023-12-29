@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <p>Tournaments</p>
+  <div class="bg-green">
+    <p>Tournaments</p>
+  </div>
 </template>

@@ -6,7 +6,7 @@ import Tournaments from './components/Tournaments.vue';
 import LiveCasino from './components/LiveCasino.vue'
 import Faq from './components/Faq.vue'
 import Footer from './components/Footer.vue'
-import Sidebar from './components/SideBar.vue';
+import Sidebar from './components/Sidebar.vue';
 </script>
 
 <template>

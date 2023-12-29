@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <p>footer</p>
+  <div class="bg-pink">
+    <p>footer</p>
+  </div>
 </template>
