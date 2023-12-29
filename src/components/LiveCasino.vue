@@ -3,12 +3,12 @@
 
 <template>
   <div class="flexCenter my-20 flex-col">
-    <div class="flex justify-between text-white w-[60%] mb-5">
+    <div class="flex justify-between text-white xl:w-[60%] md:w-[70%] w-[90%] mb-5">
       <span><strong>LIVE CASINO</strong></span>
       <span>Show All ></span>
     </div>
-    <div class="grid grid-cols-4 gap-2 w-[60%]">
-      <div v-for=" live in lives" :key="live.id">
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 xl:w-[60%] md:w-[70%] w-[90%]">
+      <div v-for=" live in lives" :key="live.id" class="flex flex-col">
         <img :src="live.image || 'https://placehold.co/300x200'" alt=" img">
         <p class="text-white bg-preto py-2 flexCenter">{{ live.title }}</p>
       </div>
