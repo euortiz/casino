@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="bg-red-500">
-    <p>livecasino</p>
+  <div>
+
   </div>
 </template>
