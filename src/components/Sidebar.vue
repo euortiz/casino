@@ -1,6 +1,6 @@
 <template>
     <div
-        class="lg:bg-preto/60 h-auto lg:w-64 w-full min-w-60  lg:border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative lg:top-32 inset-0 left-0 lg:block overflow-y-scroll backdrop-blur-3xl">
+        class="lg:bg-preto/60 h-auto lg:w-64 w-full min-w-60  lg:border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative lg:top-32 inset-0 left-0 lg:block backdrop-blur-3xl text-nowrap">
         <ul class="items-center flex flex-col justify-center">
             <div class="my-10 w-full px-10">
                 <button v-for="category in categories" :key="category.id"
