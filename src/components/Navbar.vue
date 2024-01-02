@@ -10,7 +10,7 @@ const toggleResponsiveNavbar = () => {
 </script>
 
 <template>
-  <header class="flex justify-evenly bg-preto/60 fixed top-0 shadow-xl w-full z-50 pt-[12%] sm:pt-10">
+  <header class="flex justify-evenly bg-preto/60 fixed xl:top-0 shadow-xl w-full z-50 pt-[12%] sm:pt-10 xl:h-[6rem]">
     <div class="fixed top-4 h-[8px] text-white w-full flexCenter text-center">
       <p class="bg-purple-950 top-0 relative w-full flexCenter py-1 gap-5"><img src="../assets/navbar/18.svg"
           alt="+18 icon" class="w-8 h-8">Juega con responsabilidad. Puedes comprobar las pautas de comportamiento en
@@ -19,7 +19,8 @@ const toggleResponsiveNavbar = () => {
     <div class="flex gap-3">
       <button @click="toggleResponsiveNavbar" class="text-white cursor-pointer lg:hidden"><img
           src="../assets/navbar/nav.svg"></button>
-      <img src="../assets/navbar/logo.svg" alt="Logo" class="h-20 w-20 py-2 cursor-pointer">
+      <img src="../assets/navbar/logo.svg" alt="Logo"
+        class="xl:w-[8rem] xl:h-[8rem] w-20 h-20 py-2 cursor-pointer xl:fixed xl:top-0">
     </div>
     <div class="md:flex gap-10 text-white font-medium hidden">
       <button class="flex items-center justify-center gap-1"><img src="../assets/navbar/777.svg" alt="Slots Icon"
