@@ -7,6 +7,7 @@ import LiveCasino from './components/LiveCasino.vue'
 import Faq from './components/Faq.vue'
 import Footer from './components/Footer.vue'
 import Sidebar from './components/Sidebar.vue';
+import PaymentsMethods from './components/PaymentsMethods.vue';
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import Sidebar from './components/Sidebar.vue';
       <Tournaments />
       <LiveCasino />
       <Faq />
+      <PaymentsMethods />
       <Footer />
     </div>
   </div>

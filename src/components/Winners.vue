@@ -35,13 +35,17 @@ const winners: Winner[] = [
           Winners</i>
 
         <li v-for="winner in winners" :key="winner.id"
-          class="btn_side flex flex-row items-center gap-5  text-white font-semibold py-4 px-10 text-nowrap border-b-2 border-preto hover:bg-cinza cursor-pointer w-full justify-between rounded-xl">
-          <img :src="winner.avatar" alt="Avatar" class="w-10 h-10 rounded-full">
-          <div class="flex flex-col w-full h-auto">
-            <span class="text-white/55 text-sm">{{ `${winner.player} Just Won` }}</span>
-            {{ winner.game }}
+          class="btn_side flex flex-row items-center text-white font-semibold py-2 px-5 text-nowrap border-b-2 border-preto/70 hover:bg-cinza cursor-pointer w-full justify-between rounded-xl">
+          <div class="flex gap-5 w-3/4 flexCenter">
+            <img :src="winner.avatar" alt="Avatar" class="w-10 h-10 rounded-full">
+            <div class="flex flex-col w-full h-auto">
+              <span class="text-white/55 text-sm">{{ `${winner.player} Just Won` }}</span>
+              {{ winner.game }}
+            </div>
           </div>
-          <i class="text-green px-10">{{ winner.amount }}</i>
+          <div class="h-full w-1/4 flexCenter">
+            <i class="text-green px-10 ">{{ winner.amount }}</i>
+          </div>
         </li>
       </ul>
     </div>
