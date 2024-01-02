@@ -5,14 +5,14 @@
       <ul>
         <li v-for="item in question" :key="item.id" class=" text-white overflow-hidden items-center justify-start">
           <div class="flex justify-between bg-preto border-b border-white/10 items-center">
-            <h1 class="py-2 px-4 font-semibold w-[20.625rem] sm:w-full">{{ item.question }}</h1>
-            <button @click="toggleVisibility(item.id)" class="items-center justify-center overflow-hidden w-10 h-10">
+            <h1 class="py-5 px-4 font-semibold w-[20.625rem] sm:w-full">{{ item.question }}</h1>
+            <button @click="toggleVisibility(item.id)" class="items-center justify-center overflow-hidden w-10 h-10 mr-5">
               <img v-if="isVisible[item.id]" :src="up" />
               <img v-else :src="down" />
             </button>
           </div>
           <transition name="fade">
-            <p v-if="isVisible[item.id]" class="py-2 px-4 bg-cinza rounded-b-xl mb-1 text-[0.9rem]">{{ item.answer }}</p>
+            <p v-if="isVisible[item.id]" class="py-5 px-4 bg-cinza rounded-b-xl mb-1 text-[0.9rem]">{{ item.answer }}</p>
           </transition>
         </li>
       </ul>

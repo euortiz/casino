@@ -11,7 +11,7 @@ import PaymentsMethods from './components/PaymentsMethods.vue';
 </script>
 
 <template>
-  <div class="bg-gradient-to-b from-black to-purple-950 lg:flex ">
+  <div class="bg-gradient-to-b from-black to-purple-950 lg:flex overflow-hidden">
     <Navbar />
     <Sidebar class="hidden lg:block" />
     <div class="flex-1">

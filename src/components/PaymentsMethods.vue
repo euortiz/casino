@@ -1,5 +1,5 @@
 <template>
-    <div class="slider py-10 max-container padding-container">
+    <div class="slider py-10 max-container padding-container border-b border-preto/70">
         <ul class="slide-track">
             <li class="slide"><img src="../assets/payments/bizum.svg" alt="img"></li>
             <li class="slide"><img src="../assets/payments/cashlib.svg" alt="img"></li>
