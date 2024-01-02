@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-10">
     <div class="flex flex-col max-container padding-container">
       <h1 class="text-white text-semibold text-lg lg:text-2xl mb-10">🔴 FREQUENTLY ASKED QUESTIONS</h1>
       <ul>
