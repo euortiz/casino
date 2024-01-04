@@ -8,6 +8,7 @@ import Faq from './components/Faq.vue'
 import Footer from './components/Footer.vue'
 import Sidebar from './components/Sidebar.vue';
 import PaymentsMethods from './components/PaymentsMethods.vue';
+
 </script>
 
 <template>
@@ -25,5 +26,3 @@ import PaymentsMethods from './components/PaymentsMethods.vue';
     </div>
   </div>
 </template>
-
-
