@@ -60,8 +60,9 @@ interface Winner {
         <li v-for="winner in winners" :key="winner.id"
           class="btn_side flex flex-row items-center text-white font-semibold py-2 px-5 text-nowrap border-b-2 border-preto/70 hover:bg-cinza cursor-pointer w-full justify-between rounded-xl">
           <div class="flex gap-5 w-3/4 flexCenter">
-            <img :src="`https://ui-avatars.com/api/?name=${encodeURIComponent(winner.username)}`" alt="Avatar"
-              class="w-7 h-7 rounded-full border-2 border-purple-600">
+            <img
+              :src="`https://ui-avatars.com/api?name=${encodeURIComponent(winner.username)}&color=fff&background=750088`"
+              alt="Avatar" class="w-7 h-7 rounded-full border-2 border-purple-600">
             <div class="flex flex-col w-full h-auto">
               <span class="text-white/55 text-sm">{{ `${winner.username} Just Won 🎉`
               }}</span>
