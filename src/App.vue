@@ -9,6 +9,7 @@ import Footer from './components/Footer.vue'
 import Sidebar from './components/Sidebar.vue';
 import PaymentsMethods from './components/PaymentsMethods.vue';
 import Games from './components/Games.vue';
+import FunMode from './components/FunMode.vue';
 
 </script>
 
@@ -19,13 +20,13 @@ import Games from './components/Games.vue';
     <div class="flex-1">
       <Hero />
       <Games />
+      <FunMode />
       <!-- <SlotsCasino /> -->
       <Tournaments />
       <LiveCasino />
       <Faq />
       <PaymentsMethods />
       <Footer />
-
     </div>
   </div>
 </template>
