@@ -1,6 +1,9 @@
 <template>
     <div class="flex justify-between w-full text-white mt-[12rem] px-5">
-        <span>🔴 SLOTS CASINO <i class="bg-blue-500 text-white px-5 py-2">SKILL ON NET API</i></span>
+        <span class="flexCenter gap-2 flex-col lg:flex-row">🔴 SLOTS CASINO <i
+                class="bg-blue-500 text-white px-5 py-2">SKILL ON
+                NET
+                API</i></span>
         <button class="hover:text-gray-400">Show all ></button>
     </div>
     <div class="w-full">
