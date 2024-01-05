@@ -22,7 +22,7 @@ const toggleResponsiveNavbar = () => {
 
     <!--NAVBAR-->
     <div class="flex gap-3 relative">
-      <button @click="toggleResponsiveNavbar" class="text-white cursor-pointer lg:hidden">
+      <button @click="toggleResponsiveNavbar" class="text-white cursor-pointer xl:hidden">
         <svg v-if="!isResponsiveNavbarOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke-width="2.0" stroke="currentColor" class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
@@ -54,7 +54,7 @@ const toggleResponsiveNavbar = () => {
     <!--RESPONSIVE NAVBAR-->
     <transition name="fade">
       <div v-if="isResponsiveNavbarOpen"
-        class="lg:hidden overflow-hidden transition-opacity overflow-y-scroll fixed w-full flexCenter">
+        class="xl:hidden overflow-hidden transition-opacity overflow-y-scroll fixed w-full flexCenter">
 
         <div class="flexCenter flex-col bg-preto/50 fixed top-[100%] w-full z-50">
 

@@ -16,7 +16,7 @@ import FunMode from './components/FunMode.vue';
 <template>
   <div class="bg-gradient-to-b from-black to-purple-950 lg:flex overflow-hidden">
     <Navbar />
-    <Sidebar class="hidden lg:block" />
+    <Sidebar class="hidden xl:block" />
     <div class="flex-1">
       <Hero />
       <Games />
