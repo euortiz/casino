@@ -1,7 +1,8 @@
 <template>
     <div class="w-full flexCenter flex flex-col">
         <div class="my-10">
-            <h4 class="text-white text-[2rem]"><i>GIVE A TRY ON FUN MODE!</i></h4>
+            <h4 class="text-white text-[2rem] font-bold"><i>GIVE A TRY ON <span class="text-pink">FUN MODE</span>!</i>
+            </h4>
         </div>
         <iframe src="https://promos.safe-communication.com/funmode.php?appName=DrueckGlueck&lang=en&gameID=9043"
             class="xl:w-[920px] xl:h-[510px] md:w-[720px] md:h-[410px] w-auto h-auto"></iframe>

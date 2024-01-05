@@ -10,6 +10,7 @@ import Sidebar from './components/Sidebar.vue';
 import PaymentsMethods from './components/PaymentsMethods.vue';
 import Games from './components/Games.vue';
 import FunMode from './components/FunMode.vue';
+// import Jackpots from './components/Jackpots.vue';
 
 </script>
 
@@ -27,6 +28,7 @@ import FunMode from './components/FunMode.vue';
       <Faq />
       <PaymentsMethods />
       <Footer />
+      <!-- <Jackpots /> -->
     </div>
   </div>
 </template>
