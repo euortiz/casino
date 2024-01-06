@@ -69,7 +69,7 @@ interface Winner {
               <span>{{ winner.game.length > 20 ? `${winner.game.substring(0, 20)}...` : `${winner.game}` }} </span>
             </div>
           </div>
-          <div class="h-full w-1/4 flexCenter overflow-hidden">
+          <div class="h-full w-1/4 flexCenter overflow-hidden text-nowrap">
             <i class="text-green px-5 text-nowrap">€ {{ winner.amount }}</i>
           </div>
         </li>
