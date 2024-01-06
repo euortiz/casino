@@ -9,7 +9,7 @@
       <strong><span class="text-red-500">721.80 EUR + 1000 FS </span>EVERY DAY!</strong>
       <div class=" flex flex-col gap-2">
         <strong class="text-[1rem] mt-10">TOURNAMENT OVER</strong>
-        <div class="flex gap-5 flex-wrap">
+        <div class="flex gap-5 flex-wrap items-center">
           <p>
             <span class="bg-cinza/70 py-1 px-2 rounded-lg">00d</span>
             :
@@ -17,8 +17,8 @@
             :
             <span class="bg-cinza/70 py-1 px-2 rounded-lg">00m</span>
             :
-            <button class="bg-pink py-1 px-4 rounded-lg lg:ml-5">PLAY NOW</button>
           </p>
+          <button class="bg-pink py-1 px-4 rounded-lg lg:ml-5 btn_playnow">PLAY NOW</button>
         </div>
       </div>
     </div>
@@ -31,5 +31,13 @@
   background-size: cover;
   background-position: center;
 
+}
+
+.btn_playnow {
+  transition: background-color 0.3s ease;
+}
+
+.btn_playnow:hover {
+  background-color: rgb(136, 0, 136);
 }
 </style>

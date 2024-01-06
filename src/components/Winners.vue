@@ -70,7 +70,7 @@ interface Winner {
             </div>
           </div>
           <div class="h-full w-1/4 flexCenter overflow-hidden">
-            <i class="text-green px-5">€ {{ winner.amount }}</i>
+            <i class="text-green px-5 text-nowrap">€ {{ winner.amount }}</i>
           </div>
         </li>
       </ul>
