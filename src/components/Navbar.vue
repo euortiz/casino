@@ -27,7 +27,7 @@ onBeforeUnmount(() => {
 
 <template>
   <nav
-    class="bg-preto/60 text-gray-100 py-1 px-6 shadow md:flexCenter justify-between items-center gap-20 absolute w-full z-50">
+    class="bg-preto text-gray-100 py-1 px-6 shadow md:flexCenter justify-between items-center gap-20 md:fixed static w-full z-50">
 
     <div class="flex items-center">
       <span>

@@ -4,7 +4,7 @@ import Sections from '../components/Sections.vue'
 </script>
 
 <template>
-  <div class="w-auto h-auto flex relative top-[6rem] flex-wrap">
+  <div class="w-auto h-auto flex relative md:top-[6rem] flex-wrap">
 
     <div class="relative flex flex-col w-auto h-auto ">
 
