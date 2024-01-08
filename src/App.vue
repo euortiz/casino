@@ -15,8 +15,10 @@ import FunMode from './components/FunMode.vue';
 </script>
 
 <template>
-  <div class="bg-gradient-to-b from-black to-purple-950 lg:flex overflow-hidden">
+  <header>
     <Navbar />
+  </header>
+  <main class="bg-gradient-to-b from-black to-purple-950 lg:flex overflow-hidden">
     <Sidebar class="hidden xl:block" />
     <div class="flex-1">
       <Hero />
@@ -28,7 +30,7 @@ import FunMode from './components/FunMode.vue';
       <Faq />
       <PaymentsMethods />
       <Footer />
-      <!-- <Jackpots /> -->
+      <Jackpots />
     </div>
-  </div>
+  </main>
 </template>

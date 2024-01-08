@@ -1,12 +1,7 @@
 <template>
     <div class="bg-red-500 h-[100vh]">
         <button class="bg-yellow p-10" @click="fetchData">FETCH DATA</button>
-        <son-jackpot></son-jackpot>
-        <son-jackpot type="daily">
-        </son-jackpot>
-        <son-jackpot type="mega" animate="true">
-        </son-jackpot>
-
+        <div>{{ jackpots.total }}</div>
     </div>
 </template>
   
@@ -63,7 +58,5 @@ onMounted(() => {
     --jackpot-font-size: 90px;
     --jackpot-text-align: center;
 }
-
-/* Add additional styling for son-jackpot component if needed */
 </style>
   

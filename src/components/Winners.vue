@@ -66,11 +66,11 @@ interface Winner {
             <div class="flex flex-col w-full h-auto">
               <span class="text-white/55 text-sm">{{ `${winner.username} Just Won 🎉`
               }}</span>
-              <span>{{ winner.game.length > 20 ? `${winner.game.substring(0, 20)}...` : `${winner.game}` }} </span>
+              <span>{{ winner.game.length > 17 ? `${winner.game.substring(0, 17)}...` : `${winner.game}` }} </span>
             </div>
           </div>
           <div class="h-full w-1/4 flexCenter overflow-hidden text-nowrap">
-            <i class="text-green px-5 text-nowrap">€ {{ winner.amount }}</i>
+            <i class="text-green px-1 text-nowrap flexCenter">€ {{ winner.amount }}</i>
           </div>
         </li>
       </ul>
