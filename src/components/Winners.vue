@@ -52,7 +52,7 @@ interface Winner {
 <template>
   <div class="flex-1 relative py-2 w-full h-full">
     <div class="flex-1">
-      <ul class="flex flex-col items-start justify-start mx-2 rounded-xl bg-preto px-2 py-2">
+      <ul class="flex flex-col items-start justify-start mx-1 rounded-xl bg-preto px-1 py-1">
         <i class=" bg-gray-900 text-white font-semibold py-3 px-5 text-nowrap w-full rounded-t-xl">🏆
           Latest
           Winners</i>

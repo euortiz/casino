@@ -2,12 +2,12 @@
     <div
         class="lg:bg-preto/60 h-auto lg:w-64 w-full min-w-60  lg:border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative lg:top-28 inset-0 left-0 xl:block backdrop-blur-3xl text-nowrap">
         <ul class="items-center flex flex-col justify-center">
-            <div class="my-10 w-full px-8">
-                <button v-for="category in categories" :key="category.id"
+            <div class="my-5 w-full px-8">
+                <a href="#" v-for="category in categories" :key="category.id"
                     class="btn_side text-white my-2 px-5 py-2 rounded-xl w-full items-center flex">
                     <img :src="getIconPath(category.id)" class="icones" />
                     {{ category.name }}
-                </button>
+                </a>
             </div>
 
         </ul>
