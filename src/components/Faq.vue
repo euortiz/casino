@@ -1,10 +1,13 @@
 <template>
-    <div class="max-container paddint-container cursor-pointer px-10">
-        <son-faq v-pre></son-faq>
+    <div>
+        <div class="max-container paddint-container cursor-pointer px-10">
+            <son-faq v-pre></son-faq>
+        </div>
     </div>
 </template>
 
-<script>
+<script setup lang="ts">
+
 </script>
 
 <style scoped>
