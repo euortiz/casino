@@ -1,9 +1,6 @@
 <template>
     <div class="flex justify-between w-full text-white mt-[12rem] px-5">
-        <span class="flexCenter gap-2 flex-col lg:flex-row">🔴 SLOTS CASINO <i
-                class="bg-blue-500 text-white px-5 py-2">SKILL ON
-                NET
-                API</i></span>
+        <span class="flexCenter">🔴 SLOTS CASINO</span>
         <button class="hover:text-gray-400">Show all ></button>
     </div>
     <div class="w-full">
@@ -15,8 +12,6 @@
                         class="w-full h-40 object-cover rounded-t-xl ">
                     <div class="w-full flex-center flex-col text-center">
                         <h4 class="my-3 text-[1.3rem]">{{ game.application_name }}</h4>
-                        <!-- <p>Provider: {{ game.game_provider }}</p>
-                        <p>Rating: {{ game.rating.rating }}</p> -->
                     </div>
 
                 </li>
@@ -39,7 +34,6 @@ interface Game {
     rating?: {
         rating: string;
     };
-    // Add more properties as needed
     item_title: string; // For constructing image URL
 }
 
@@ -52,7 +46,6 @@ const fetchData = async () => {
                 appName: 'DrueckGlueck.co.uk',
                 country: 'ES',
                 platform: 'desktop',
-                // Add more parameters as needed
                 limit: 20,
             },
         });

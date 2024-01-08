@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CustomButton from './CustomButton.vue';
+
 </script>
 
 <template>
@@ -18,7 +20,8 @@
             <span class="bg-cinza/70 py-1 px-2 rounded-lg">00m</span>
             :
           </p>
-          <button class="bg-pink py-1 px-4 rounded-lg lg:ml-5 btn_playnow">PLAY NOW</button>
+          <CustomButton title="PLAY
+              NOW" bg-color="red" />
         </div>
       </div>
     </div>

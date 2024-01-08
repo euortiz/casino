@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Winners from '../components/Winners.vue'
 import Sections from '../components/Sections.vue'
+import CustomButton from './CustomButton.vue';
 </script>
 
 <template>
@@ -12,9 +13,8 @@ import Sections from '../components/Sections.vue'
 
         <div class="w-full h-full lg:w-2/3">
 
-          <div class="rounded-xl h-[50vh] md:h-full overflow-hidden md:mx-2">
-            <img src=" ../assets/hero/hero.svg" alt="hero img"
-              class=" object-cover bg-no-repeat rounded-xl pt-2 h-full w-full">
+          <div class="rounded-xl h-[40vh] md:h-full overflow-hidden">
+            <img src=" ../assets/hero/hero.svg" alt="hero img" class="object-cover bg-no-repeat rounded-xl h-full w-full">
           </div>
 
           <!--WELCOME PACKAGE TEXT-->
@@ -23,9 +23,11 @@ import Sections from '../components/Sections.vue'
             <h1>Welcome Package</h1>
             <i>€/€200</i><br>
             <i class="text-yellow">+200 </i><i>free spins</i><br>
-            <button
-              class="bg-red-600 border-2 text-white font-medium py-2 px-5 rounded-xl cursor-pointer text-[1.5rem] hover:bg-gradient-to-r from-pink to-purple-700">PLAY
-              NOW</button>
+            <div class="my-5">
+              <CustomButton title="PLAY
+              NOW" bg-color="purple" />
+            </div>
+
           </div>
 
         </div>
