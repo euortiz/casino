@@ -5,6 +5,143 @@
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="modulepreload"
+      as="script"
+      href="
+    https://service.image-tech-storage.com/workers/1484/webcomponents.dbd38cdb.js"
+    />
+
+    <script
+      type="module"
+      src="https://service.image-tech-storage.com/workers/1484/webcomponents.dbd38cdb.js"
+    ></script>
+
+    <script id="son-config">
+      var sonDeepFreeze = function (obj) {
+        Object.keys(obj).forEach(function (property) {
+          if (
+            (typeof obj[property] === "object" ||
+              Array.isArray(obj[property])) &&
+            !Object.isFrozen(obj[property])
+          ) {
+            sonDeepFreeze(obj[property]);
+          }
+        });
+        return Object.freeze(obj);
+      };
+      Object.defineProperty(window, "SON_CONFIG", {
+        value: sonDeepFreeze({
+          skin: "Knightslots",
+          displayName: "Knightslots",
+          license: "MT",
+          family: "Knightslots",
+          abbrev: "knights",
+          braze: true,
+          cookie_consent: {
+            name: "son_consent",
+            version: 1,
+            categories: [
+              { name: "necessary", checked: true, needed: true, wanted: true },
+              {
+                name: "functionality",
+                checked: false,
+                needed: false,
+                wanted: true,
+              },
+              { name: "tracking", checked: false, needed: false, wanted: true },
+              {
+                name: "targeting",
+                checked: false,
+                needed: false,
+                wanted: true,
+              },
+            ],
+            enabled: true,
+          },
+          gtm: null,
+          gtm_layername: "dataLayer",
+          locale: "EN",
+          lang: "en",
+          lang_id: 1,
+          gth_lang_id: 1,
+          segments: ["en", "uk"],
+          affiliate: "house_knights0124",
+          dynid: "no_zone",
+          zoneid: "none",
+          currency: {
+            currency_id: 2,
+            code: "EUR",
+            symbol: "€",
+            symbol_place: "before",
+            country: "*",
+            rate: 1,
+            currency_separator: ",",
+            currency_decimal: ".",
+          },
+          apps: {
+            enabled: true,
+            ios: {
+              id: "1628118879",
+              available: false,
+              team_id: "DA8PHQG532",
+              bundle_id: "com.knightslots.skillonnet",
+              aths: false,
+              url: "",
+            },
+            android: {
+              available: false,
+              id: "com.knightslots.www",
+              ais: false,
+              aths: false,
+              url: "",
+            },
+          },
+          analytics: false,
+          registration_token: "b669e29f-d1aa-45b7-9fb5-55356c452522",
+          client_type: "subdomain",
+          support_email: "support@knightslots.com",
+          interstitial: false,
+          registeredUser: false,
+          pnp: { enabled: false, payments: [], pnp_payments_extra: false },
+          restrictions: true,
+          domain: "knightslots.com",
+          cta: {
+            url: [
+              "erany.netdnstrace1.com/appdev/reg/TestCasino.dl/Login",
+              "https://www.playuzu.mx/mx",
+              "https://www.drueckglueck.com/de/",
+              "https://www.playuzu.mx/specials/uzuvip-new",
+              "https://www.luckyniki.de/vip/vip-punkte/",
+              "https://www.luckyniki.de/niki/social/",
+              "https://www.playuzu.com/cl/juegos/",
+              "https://www.playuzu.com/juegos/",
+              "https://www.playuzu.mx/juegos/",
+              "https://www.playuzu.com/pe/juegos/",
+              "https://www.playuzu.es/juegos/",
+            ],
+          },
+          country_name: "CYPRUS",
+          device: "desktop",
+          isMobile: false,
+          os: "Windows",
+          browser: "Chrome",
+          origin: "https://www.knightslots.com",
+          resources: "https://service.image-tech-storage.com/workers/1484",
+          isDev: false,
+          country: "CY",
+          regionCode: "02",
+          city: "Limassol",
+          sub: "www",
+          tld: "com",
+          webcomponents:
+            "https://service.image-tech-storage.com/workers/1484/webcomponents.dbd38cdb.js",
+        }),
+        writable: false,
+      });
+    </script>
+
     <title>Casino Test</title>
   </head>
   <body>

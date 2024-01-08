@@ -4,13 +4,14 @@ import Hero from './components/Hero.vue';
 // import SlotsCasino from './components/SlotsCasino.vue'
 import Tournaments from './components/Tournaments.vue';
 import LiveCasino from './components/LiveCasino.vue'
-import Faq from './components/Faq.vue'
+// import Faq from './components/Faq.vue'
 import Footer from './components/Footer.vue'
 import Sidebar from './components/Sidebar.vue';
 import PaymentsMethods from './components/PaymentsMethods.vue';
 import Games from './components/Games.vue';
 import FunMode from './components/FunMode.vue';
-// import Jackpots from './components/Jackpots.vue';
+import Jackpots from './components/Jackpots.vue';
+import Faq from './components/Faq.vue';
 
 </script>
 
@@ -27,10 +28,13 @@ import FunMode from './components/FunMode.vue';
       <!-- <SlotsCasino /> -->
       <Tournaments />
       <LiveCasino />
+      <Jackpots />
       <Faq />
+      <!-- <Faq_MyComponent /> -->
       <PaymentsMethods />
       <Footer />
-      <Jackpots />
+
+
     </div>
   </main>
 </template>

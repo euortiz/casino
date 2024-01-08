@@ -33,7 +33,6 @@ import CustomButton from './CustomButton.vue';
   background-image: url('../assets/tournaments/bgtour.svg');
   background-size: cover;
   background-position: center;
-
 }
 
 .btn_playnow {

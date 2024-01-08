@@ -29,6 +29,7 @@ const imgs: Footer_img[] = [
 <template>
   <div class="my-10">
     <div class="flexCenter flex-col">
+      <!-- <son-license-logos class="my-5"></son-license-logos> -->
       <ul
         class="flexCenter gap-10 max-container padding-container border-b border-preto/70 py-10 xl:flex-nowrap flex-wrap">
         <li v-for="item in imgs" :key="item.id" class="w-[200px] flexCenter flex-col lg:flex-row"><img :src="item.image"
