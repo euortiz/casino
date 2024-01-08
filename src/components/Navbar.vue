@@ -8,6 +8,11 @@ const toggleResponsiveNavbar = () => {
   open.value = !open.value;
 };
 
+const stopScrollPropagation = (event: { stopPropagation: () => void; }) => {
+  // Prevent the scroll event from reaching parent elements
+  event.stopPropagation();
+};
+
 let open = ref(false)
 
 const updateScreenSize = () => {
@@ -17,10 +22,12 @@ const updateScreenSize = () => {
 onMounted(() => {
   updateScreenSize();
   window.addEventListener('resize', updateScreenSize);
+  window.addEventListener('scroll', stopScrollPropagation, { passive: false });
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', updateScreenSize);
+  window.removeEventListener('scroll', stopScrollPropagation);
 });
 
 </script>
