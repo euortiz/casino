@@ -1,29 +1,29 @@
 <script setup lang="ts">
-import auto from '../assets/footer/auto.svg'
-import skillonnet from '../assets/footer/skillonnet.svg'
-import ego from '../assets/footer/ego.svg'
-import techlabs from '../assets/footer/techlabs.svg'
-import eighteen from '../assets/footer/eighteen.svg'
-import jugarbien from '../assets/footer/jugarbien.svg'
-import autopro from '../assets/footer/autopro.svg'
-import juegoseguro from '../assets/footer/juegoseguro.svg'
+// import auto from '../assets/footer/auto.svg'
+// import skillonnet from '../assets/footer/skillonnet.svg'
+// import ego from '../assets/footer/ego.svg'
+// import techlabs from '../assets/footer/techlabs.svg'
+// import eighteen from '../assets/footer/eighteen.svg'
+// import jugarbien from '../assets/footer/jugarbien.svg'
+// import autopro from '../assets/footer/autopro.svg'
+// import juegoseguro from '../assets/footer/juegoseguro.svg'
 
 
-interface Footer_img {
-  id: number;
-  image: string;
-}
+// interface Footer_img {
+//   id: number;
+//   image: string;
+// }
 
-const imgs: Footer_img[] = [
-  { id: 1, image: skillonnet },
-  { id: 2, image: ego },
-  { id: 3, image: auto },
-  { id: 4, image: techlabs },
-  { id: 5, image: eighteen },
-  { id: 6, image: jugarbien },
-  { id: 7, image: autopro },
-  { id: 8, image: juegoseguro },
-]
+// const imgs: Footer_img[] = [
+//   { id: 1, image: skillonnet },
+//   { id: 2, image: ego },
+//   { id: 3, image: auto },
+//   { id: 4, image: techlabs },
+//   { id: 5, image: eighteen },
+//   { id: 6, image: jugarbien },
+//   { id: 7, image: autopro },
+//   { id: 8, image: juegoseguro },
+// ]
 </script>
 
 <template>
@@ -46,4 +46,5 @@ const imgs: Footer_img[] = [
           deserunt!</p>
       </div>
     </div>
-</div></template>
+  </div>
+</template>

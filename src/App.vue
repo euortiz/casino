@@ -12,7 +12,7 @@ import Games from './components/Games.vue';
 import FunMode from './components/FunMode.vue';
 import Jackpots from './components/Jackpots.vue';
 import Faq from './components/Faq.vue';
-import Testimonials from './components/Testimonials.vue';
+// import Testimonials from './components/Testimonials.vue';
 
 </script>
 
@@ -34,7 +34,7 @@ import Testimonials from './components/Testimonials.vue';
       <!-- <Faq_MyComponent /> -->
       <PaymentsMethods />
       <Footer />
-      <Testimonials />
+      <!-- <Testimonials /> -->
     </div>
   </main>
 </template>
