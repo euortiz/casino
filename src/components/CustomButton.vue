@@ -1,5 +1,5 @@
 <template>
-    <button :style="{ backgroundColor: props.bgColor }"
+    <button @click="$emit('click')" :style="{ backgroundColor: props.bgColor }"
         class="btn_nav border text-white font-medium py-2 px-5 rounded-xl cursor-pointer text-nowrap">
         {{ props.title }}
     </button>
@@ -8,6 +8,7 @@
 <script setup lang="ts">
 interface ButtonProps {
     title: string;
+    href?: string;
     bgColor?: string; // Add bgColor as an optional prop
 }
 

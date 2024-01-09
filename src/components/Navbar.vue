@@ -2,16 +2,18 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import CustomButton from './CustomButton.vue';
 import Sidebar from './Sidebar.vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+const goToContact = () => {
+  router.push('/contact');
+};
 
 const toggleResponsiveNavbar = () => {
   open.value = !open.value;
 };
 
-const stopScrollPropagation = (event: { stopPropagation: () => void; }) => {
-  // Prevent the scroll event from reaching parent elements
-  event.stopPropagation();
-};
 
 let open = ref(false)
 
@@ -22,12 +24,10 @@ const updateScreenSize = () => {
 onMounted(() => {
   updateScreenSize();
   window.addEventListener('resize', updateScreenSize);
-  window.addEventListener('scroll', stopScrollPropagation, { passive: false });
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', updateScreenSize);
-  window.removeEventListener('scroll', stopScrollPropagation);
 });
 
 </script>
@@ -71,7 +71,7 @@ onBeforeUnmount(() => {
           <CustomButton title="Sign In" />
         </li>
         <li>
-          <CustomButton title="Connect" bg-color="#DC143C" />
+          <CustomButton title="Contact" @click="goToContact" bg-color="#DC143C" />
         </li>
       </ul>
 

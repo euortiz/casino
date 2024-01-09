@@ -1,18 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Hero from "./components/Hero.vue";
-import SlotsCasino from "./components/SlotsCasino.vue";
-import Tournaments from "./components/Tournaments.vue";
-import LiveCasino from "./components/LiveCasino.vue";
-import Faq from "./components/Faq.vue";
-import PaymentsMethods from "./components/PaymentsMethods.vue";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
+import Contact from "../views/Contact.vue";
 
 const routes = [
-  { path: "/", component: Hero },
-  { path: "/slots", component: SlotsCasino },
-  { path: "/tournaments", component: Tournaments },
-  { path: "/live-casino", component: LiveCasino },
-  { path: "/faq", component: Faq },
-  { path: "/payments", component: PaymentsMethods },
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+  { path: "/contact", component: Contact },
 ];
 
 const router = createRouter({
