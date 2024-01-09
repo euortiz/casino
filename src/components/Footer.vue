@@ -30,23 +30,20 @@ const imgs: Footer_img[] = [
   <div class="my-10">
     <div class="flexCenter flex-col">
       <!-- <son-license-logos class="my-5"></son-license-logos> -->
-      <ul
+      <!-- <ul
         class="flexCenter gap-10 max-container padding-container border-b border-preto/70 py-10 xl:flex-nowrap flex-wrap">
         <li v-for="item in imgs" :key="item.id" class="w-[200px] flexCenter flex-col lg:flex-row"><img :src="item.image"
             class="cursor-pointer">
         </li>
-      </ul>
+      </ul> -->
       <div><img src="../assets/footer/securesite.svg" class="w-[100px]"></div>
       <div class="text-white max-container padding-container m-10">
-        <p class="mb-10">Jugar juegos con dinero real requiere el registro de una cuenta.El acceso a los sitios online de
-          juego con
-          dinero real está prohibido por las personas incluidas en el Artículo 6.2 (a) y la Ley 13/2011, de 27 de mayo,
-          sobre la regulación de los juegos.</p>
-        <p class="mb-10">Skill On Net S.A. Calle Carlos De Arellano, 27, 52003 Melilla, Spain es el titular de las
-          licencias emitidas
-          por la Dirección General de Ordenación del Juego. Para obtener más información, por favor haga click aqui</p>
-        <p>Las apuestas pueden generar hábitos adictivos; juegue de forma responsable.</p>
+        <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aut facere inventore, debitis
+          necessitatibus distinctio odit officiis voluptate eius ipsum est deserunt minima suscipit optio cupiditate,
+          impedit rem earum voluptatibus!</p>
+        <p class="mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia, corporis iste atque
+          molestiae placeat quae sed commodi facere esse libero excepturi quod sequi non porro quam temporibus odit
+          deserunt!</p>
       </div>
     </div>
-  </div>
-</template>
+</div></template>
