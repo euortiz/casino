@@ -16,7 +16,7 @@
         </div>
 
 
-        <div class="text-white m-5 flex flex-col w-3/4 my-10">
+        <div class="text-white m-5 flex flex-col sm:w-3/4 my-10">
 
           <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aut facere inventore, debitis
             necessitatibus distinctio odit officiis voluptate eius ipsum est deserunt minima suscipit optio cupiditate,

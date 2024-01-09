@@ -6,8 +6,16 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
+const goToHome = () => {
+  router.push('/');
+};
+
 const goToContact = () => {
   router.push('/contact');
+};
+
+const goToSignIn = () => {
+  router.push('/signin');
 };
 
 const toggleResponsiveNavbar = () => {
@@ -18,7 +26,9 @@ const toggleResponsiveNavbar = () => {
 let open = ref(false)
 
 const updateScreenSize = () => {
-  open.value = window.innerWidth >= 768; // Adjust the breakpoint as needed
+  if (!open.value) {
+    open.value = window.innerWidth >= 768; // Adjust the breakpoint as needed
+  }
 };
 
 onMounted(() => {
@@ -37,8 +47,8 @@ onBeforeUnmount(() => {
     class="bg-preto text-gray-100 py-1 px-6 shadow md:flexCenter justify-between items-center gap-20 md:fixed static w-full z-50">
 
     <div class="flex items-center">
-      <span>
-        <img src="../assets/navbar/logo.svg" alt="Casino Logo" class="w-20 h-20 block">
+      <span @click="goToHome">
+        <img src="../assets/navbar/logo.svg" alt="Casino Logo" class="w-20 h-20 block cursor-pointer">
       </span>
     </div>
 
@@ -68,7 +78,7 @@ onBeforeUnmount(() => {
 
       <ul class="flexCenter gap-3 md:my-0 my-5">
         <li>
-          <CustomButton title="Sign In" />
+          <CustomButton title="Sign In" @click="goToSignIn" />
         </li>
         <li>
           <CustomButton title="Contact" @click="goToContact" bg-color="#DC143C" />

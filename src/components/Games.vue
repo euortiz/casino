@@ -1,12 +1,12 @@
 <template>
     <div class="flex justify-between w-full text-white mt-[12rem] px-5">
         <span class="flexCenter">🔴 SLOTS CASINO</span>
-        <button class="hover:text-gray-400">Show all ></button>
+        <button @click="showAll = !showAll" class="hover:text-gray-400">Show all ></button>
     </div>
     <div class="w-full">
-        <div v-if="games.length > 0">
-            <ul class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-3 max-container padding-container my-10">
-                <li v-for="game in games" :key="game.internal_game_id"
+        <div v-if="displayGames.length > 0">
+            <ul class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-3 max-container padding-container my-10">
+                <li v-for="game in displayGames" :key="game.internal_game_id"
                     class="griditem bg-preto rounded-xl text-white overflow-hidden flexCenter flex-col w-auto h-auto border-cinza border-4">
                     <img :src="constructImageUrl(game.item_title)" alt="Game Image"
                         class="w-full h-40 object-cover rounded-t-xl ">
@@ -24,7 +24,7 @@
 </template>
   
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import axios from 'axios';
 
 interface Game {
@@ -34,10 +34,19 @@ interface Game {
     rating?: {
         rating: string;
     };
-    item_title: string; // For constructing image URL
+    item_title: string;
 }
 
 const games = ref<Game[]>([]);
+const showAll = ref(false);
+
+const displayGames = computed(() => {
+    if (showAll.value) {
+        return games.value;
+    } else {
+        return games.value.slice(0, Math.floor(games.value.length / 2));
+    }
+});
 
 const fetchData = async () => {
     try {
@@ -49,9 +58,7 @@ const fetchData = async () => {
                 limit: 20,
             },
         });
-        console.log(response.data);
 
-        // Check the actual structure of the response
         games.value = response.data || [];
 
         console.log('API Response:', games.value);
@@ -61,11 +68,9 @@ const fetchData = async () => {
 };
 
 const constructImageUrl = (itemTitle: string): string => {
-    // Construct the image URL using the CDN endpoint and item_title
     return `https://aws-origin.image-tech-storage.com/gameRes/sq/500/${itemTitle}.jpg`;
 };
 
-// Automatically fetch data when the component is mounted
 onMounted(() => {
     fetchData();
 });
