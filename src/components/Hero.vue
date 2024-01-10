@@ -5,7 +5,7 @@ import CustomButton from './CustomButton.vue';
 </script>
 
 <template>
-  <div class="w-auto h-auto flex relative md:top-[6rem] flex-wrap">
+  <div class="w-auto h-auto flex flex-wrap relative md:top-20">
 
     <div class="relative flex flex-col w-auto h-auto ">
 

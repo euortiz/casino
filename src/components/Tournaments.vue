@@ -1,6 +1,40 @@
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue';
 import CustomButton from './CustomButton.vue';
 
+const days = ref('00');
+const hours = ref('00');
+const minutes = ref('00');
+const seconds = ref('00');
+
+let intervalId: number;
+
+onMounted(() => {
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 5); // 5 days from now
+
+  intervalId = setInterval(() => {
+    const now = new Date();
+    const diff = targetDate.getTime() - now.getTime();
+
+    if (diff <= 0) {
+      days.value = '00';
+      hours.value = '00';
+      minutes.value = '00';
+      seconds.value = '00';
+      clearInterval(intervalId);
+    } else {
+      days.value = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+      hours.value = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+      minutes.value = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+      seconds.value = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    }
+  }, 1000);
+});
+
+onUnmounted(() => {
+  clearInterval(intervalId);
+});
 </script>
 
 <template>
@@ -13,15 +47,15 @@ import CustomButton from './CustomButton.vue';
         <strong class="text-[1rem] mt-10">TOURNAMENT OVER</strong>
         <div class="flex gap-5 flex-wrap items-center">
           <p>
-            <span class="bg-cinza/70 py-1 px-2 rounded-lg">00d</span>
+            <span class="bg-cinza/70 py-1 px-2 rounded-lg">{{ days }}d</span>
             :
-            <span class="bg-cinza/70 py-1 px-2 rounded-lg">00h</span>
+            <span class="bg-cinza/70 py-1 px-2 rounded-lg">{{ hours }}h</span>
             :
-            <span class="bg-cinza/70 py-1 px-2 rounded-lg">00m</span>
+            <span class="bg-cinza/70 py-1 px-2 rounded-lg">{{ minutes }}m</span>
             :
+            <span class="bg-cinza/70 py-1 px-2 rounded-lg">{{ seconds }}s</span>
           </p>
-          <CustomButton title="PLAY
-              NOW" bg-color="red" />
+          <CustomButton title="PLAY NOW" bg-color="red" />
         </div>
       </div>
     </div>
