@@ -1,6 +1,8 @@
 <template>
-    <div class="h-[100vh] bg-gray-200 flexCenter">
-        <son-testimonials></son-testimonials>
+    <div class="h-[50vh] bg-gray-200 flexCenter my-20">
+        <son-testimonials v-pre loop="true" slides_per_view="1"
+            breakpoints='[{"viewport_width": 1300, "slides_per_view": 2}]' direction="horizontal"
+            viewport_width="100%"></son-testimonials>
     </div>
 </template>
 

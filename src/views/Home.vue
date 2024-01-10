@@ -6,6 +6,7 @@
         <Tournaments />
         <LiveCasino />
         <Jackpots />
+        <!-- <Testimonials /> -->
         <Faq />
         <PaymentsMethods />
     </div>
@@ -20,4 +21,5 @@ import LiveCasino from '../components/LiveCasino.vue';
 import Jackpots from '../components/Jackpots.vue';
 import Faq from '../components/Faq.vue';
 import PaymentsMethods from '../components/PaymentsMethods.vue';
+// import Testimonials from '../components/Testimonials.vue';
 </script>

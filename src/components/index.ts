@@ -10,3 +10,4 @@ export { default as Navbar } from "./Navbar.vue";
 export { default as PaymentsMethods } from "./PaymentsMethods.vue";
 export { default as Sidebar } from "./Sidebar.vue";
 export { default as Tournaments } from "./Tournaments.vue";
+export { default as Testimonials } from "./Testimonials.vue";
