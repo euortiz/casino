@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
 
 <template>
   <nav
-    class="bg-preto text-gray-100 py-1 px-6 shadow md:flexCenter justify-between items-center gap-20 absolute w-full z-50">
+    class="bg-preto text-gray-100 py-1 px-6 shadow md:flexCenter justify-between items-center gap-20 absolute w-full z-50 ">
 
     <div class="flex items-center">
       <span @click="goToHome">
@@ -64,7 +64,7 @@ onBeforeUnmount(() => {
     </button>
 
     <div v-if="open" class="md:flex md:items-center gap-20">
-      <ul class="flexCenter gap-3 text-nowrap md:my-0 my-5">
+      <ul class="md:flexCenter gap-3 text-nowrap md:my-0 my-5 hidden">
         <li class="text-white font-semibold flexCenter gap-2"><span><img src="../assets/navbar/777.svg"
               class="w-8"></span><a href="#">Slots</a></li>
         <li class="text-white font-semibold flexCenter gap-2"><span><img src="../assets/navbar/cards.svg"

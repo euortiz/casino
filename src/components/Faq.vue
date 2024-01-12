@@ -10,7 +10,7 @@
 
 </script>
 
-<style scoped>
+<style >
 :root {
     /* FAQ GROUP */
     --faq-group-header-padding: 1rem;

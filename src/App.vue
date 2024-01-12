@@ -10,7 +10,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <header>
+  <header class="fixed w-full z-50">
     <components.Navbar />
   </header>
   <main class="bg-gradient-to-b from-black to-purple-950 lg:flex overflow-hidden">
