@@ -64,7 +64,7 @@ onBeforeUnmount(() => {
     </button>
 
     <div v-if="open"
-      class="md:flex md:items-center gap-20 sm:h-auto h-[100vh] md:overflow-hidden overflow-scroll md:pb-0 pb-20">
+      class="md:flex md:items-center gap-20 sm:h-auto h-[100vh] md:overflow-hidden md:pb-0 pb-20 sidebar-scroll">
       <ul class="md:flexCenter gap-3 text-nowrap md:my-0 my-5 hidden">
         <li class="text-white font-semibold flexCenter gap-2"><span><img src="../assets/navbar/777.svg"
               class="w-8"></span><a href="#">Slots</a></li>
@@ -100,4 +100,16 @@ nav {
   backdrop-filter: blur(1.5rem);
   /* BLUR EFFECT IN THE NAVBAR */
 }
-</style>
+
+.sidebar-scroll {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari and Opera */
+}</style>
