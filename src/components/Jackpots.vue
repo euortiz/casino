@@ -41,7 +41,7 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 :root {
     --jackpot-font-weight: 700;
     --jackpot-font-size: 50px;
