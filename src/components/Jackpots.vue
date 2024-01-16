@@ -1,5 +1,5 @@
 <template>
-    <div class="my-20 max-container padding-container text-nowrap">
+    <div class="my-20 max-container padding-container text-nowrap" v-motion-slide-visible-left>
         <son-jackpot type="total" animate="true" duration="8000" v-pre class="text-white"></son-jackpot>
     </div>
 </template>

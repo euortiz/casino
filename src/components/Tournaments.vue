@@ -38,7 +38,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="my-20 lg;px-20 main-container py-20 flexCenter">
+  <div class="my-20 lg;px-20 main-container py-20 flexCenter" v-motion-slide-visible-left>
     <div class="flex flex-col gap-2 text-white lg:text-[2rem] text-[1.5rem] lg:ml-[60%] bg-preto/50 p-5">
       <span class="text-[1rem] my-3 opacity-50">TOURNAMENTS</span>
       <strong class="mt-5">DAILY SLOT RACE</strong>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-motion-slide-visible-bottom>
         <div class="max-container paddint-container cursor-pointer px-10">
             <son-faq v-pre></son-faq>
         </div>

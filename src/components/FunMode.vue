@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flexCenter flex flex-col">
+    <div class="w-full flexCenter flex flex-col" v-motion-slide-visible-right>
         <div class="my-10">
             <h4 class="text-white md:text-[2rem] text-[1.5rem] font-bold"><i>GIVE A TRY ON <span class="text-pink">FUN
                         MODE</span>!</i>

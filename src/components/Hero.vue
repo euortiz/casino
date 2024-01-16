@@ -5,7 +5,13 @@ import CustomButton from './CustomButton.vue';
 </script>
 
 <template>
-  <div class="w-auto h-auto flex flex-wrap relative top-20">
+  <div class="w-auto h-auto flex flex-wrap relative top-20" v-motion :initial="{
+    opacity: 0,
+    y: 300,
+  }" :enter="{
+  opacity: 1,
+  y: 0,
+}" :delay="200">
 
     <div class="relative flex flex-col w-auto h-auto ">
 

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-cinza">
+  <div class="bg-cinza" v-motion-slide-visible-bottom>
     <div class="flexCenter flex-col">
 
 

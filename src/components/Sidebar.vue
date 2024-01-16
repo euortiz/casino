@@ -1,6 +1,6 @@
 <template>
-    <div
-        class="lg:bg-preto/60 h-auto lg:w-64 w-full min-w-60  lg:border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative lg:top-28 inset-0 left-0 xl:block backdrop-blur-3xl text-nowrap">
+    <div class="lg:bg-preto/60 h-auto lg:w-64 w-full min-w-60  lg:border-b-gray-600 rounded-b-2xl shadow-2xl md:m-1 relative lg:top-28 inset-0 left-0 xl:block backdrop-blur-3xl text-nowrap"
+        v-motion-slide-top>
         <ul class="items-center flex flex-col justify-center">
             <div class="my-5 w-full px-8">
                 <a href="#" v-for="category in categories" :key="category.id"

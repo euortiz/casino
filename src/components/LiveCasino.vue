@@ -1,5 +1,5 @@
 <template>
-  <div class="flexCenter my-20 flex-col">
+  <div class="flexCenter my-20 flex-col" v-motion-slide-visible-right>
     <div class="flex justify-between text-white xl:w-[60%] md:w-[70%] w-[90%] mb-5">
       <span><strong>📺 LIVE CASINO</strong></span>
       <span>Show All ></span>

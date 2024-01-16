@@ -7,9 +7,12 @@ onBeforeMount(() => {
   const route = useRoute();
   console.log(route.path);
 });
+
 </script>
 
 <template>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= process.env.VUE_APP_GTM_ID %>" height="0"
+      width="0" style="display: none; visibility: hidden"></iframe></noscript>
   <header class="fixed w-full z-50">
     <components.Navbar />
   </header>

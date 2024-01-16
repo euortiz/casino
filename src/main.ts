@@ -1,7 +1,8 @@
 import { createApp } from "vue";
 import "../style.css";
 import App from "./App.vue";
-import router from "./router/router.ts"; // import your router
+import router from "./router/router.ts"; // importing the router
+import { MotionPlugin } from "@vueuse/motion";
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -16,6 +17,7 @@ import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 library.add(faUserSecret);
 
 createApp(App)
-  .use(router) // use your router
+  .use(MotionPlugin)
+  .use(router) // using the router
   .component("font-awesome-icon", FontAwesomeIcon)
   .mount("#app");
