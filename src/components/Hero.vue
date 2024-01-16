@@ -5,7 +5,7 @@ import CustomButton from './CustomButton.vue';
 </script>
 
 <template>
-  <div class="w-auto h-auto flex flex-wrap relative top-20" v-motion :initial="{
+  <div class="w-auto h-auto flex flex-wrap relative top-20 flexCenter" v-motion :initial="{
     opacity: 0,
     y: 300,
   }" :enter="{
