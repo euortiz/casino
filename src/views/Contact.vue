@@ -1,7 +1,8 @@
 <template>
     <div class="text-preto relative flexCenter lg:my-10 h-[100vh]">
 
-        <form @submit.prevent="submitForm" class="p-10 w-full space-y-5 bg-gray-100 rounded max-w-[60vh]">
+        <form @submit.prevent="submitForm" class="p-10 w-full space-y-5 bg-gray-100 rounded max-w-[60vh]"
+            id="contact-form">
             <h1 class="text-3xl font-bold mb-4 flexCenter">Contact Us</h1>
             <div class="md:px-5">
                 <input type="text" id="name" v-model="name" placeholder="Name"
